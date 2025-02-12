@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import registerRoutes from './routes/register.js';
 import authRoutes from './routes/auth.js';
 import logoutRoutes from './routes/logout.js'
+import cookieParser from 'cookie-parser';
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ mongoose.connect(URI);
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(cookieParser());
 
 app.use('/auth', authRoutes);
 app.use('/register', registerRoutes);

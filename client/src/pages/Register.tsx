@@ -34,7 +34,7 @@ export function Register() {
     
             if (scene) {
                 const CreateDiv = () => {
-                    for (let i = 0; i < 200; i++) {
+                    for (let i = 0; i < 150; i++) {
                         const div = document.createElement("div");
                         const randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
                         const randomFontFamily = fontFamilies[Math.floor(Math.random() * fontFamilies.length)];

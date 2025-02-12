@@ -7,11 +7,14 @@ const authenticationSchema = new mongoose.Schema({
         required: true
     },
     password: {
-        Type: String,
+        type: String,
         required: true
     },
     email: {
         type: String,
         required: true
     }
-})
+});
+
+const AuthenticationModel = mongoose.model("Player", authenticationSchema);
+export default AuthenticationModel;
