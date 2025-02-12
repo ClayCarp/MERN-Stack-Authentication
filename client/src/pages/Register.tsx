@@ -105,7 +105,9 @@ export function Register() {
             <main className="scene" ref={sceneRef}></main>
             <section className="auth-section">
                 <div className="auth-container">
-                    <img className='auth-logo' src="/logo.png" alt="" />
+                    <Link to="/" className="auth-logo-link">
+                        <img className="auth-logo" src="/logo.png" alt="logo" />
+                    </Link>
                     <h1>Register</h1>
                     <form onSubmit={handleRegisterSubmit}>
                     <div className="form-group">

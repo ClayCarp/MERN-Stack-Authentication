@@ -80,7 +80,7 @@ export function Login() {
             const result = await axios.post("http://localhost:8080/auth", { username, password });
             if (result.data.message === "Login successful") {
                 localStorage.setItem("isAuthenticated", "true");
-                navigate('/landing', { replace: true });
+                navigate('/Home', { replace: true });
             } else if (result.data.message === "Incorrect password") {
                 alert("Incorrect email or password");
             }
@@ -94,7 +94,9 @@ export function Login() {
             <main className="scene" ref={sceneRef}></main>
             <section className="auth-section">
                 <div className="auth-container">
-                    <img className='auth-logo' src="/logo.png" alt="logo" />
+                <Link to="/" className="auth-logo-link">
+                    <img className="auth-logo" src="/logo.png" alt="logo" />
+                </Link>
                     <h1>Login</h1>
                     <form onSubmit={handleLoginSubmit}>
                         <div className="form-group">
