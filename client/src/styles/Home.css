@@ -49,6 +49,7 @@
     height: 300px;
     width: 300px;
     display: flex;
+    background-color: #39e75f2d;
     justify-content: center;
     align-items: flex-start;
     border: 1px solid #f2f2f2;
@@ -118,6 +119,7 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: all .3s ease;
+    background-position: center bottom 50px;
 }
 
 .classic-bg:hover .card-title {
