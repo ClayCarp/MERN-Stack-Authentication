@@ -3,6 +3,9 @@ import GameType from "../components/GameType";
 import { Link } from "react-router-dom";
 
 export function Home(){
+
+    
+
     return(
         <>
             <section className="home">
