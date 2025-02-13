@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 export function Home(){
 
-    
-
     return(
         <>
             <section className="home">
@@ -22,7 +20,7 @@ export function Home(){
                     <div className="button-container">
                         <Link className="home-btn" to="/Subscribe">No Ads</Link>
                         <Link className="home-btn" to="/Login">Login</Link>
-                        <Link className="home-btn" to="/Stats">View Stats</Link>
+                        <Link className="home-btn" to="/Leaderboard">Leaderboard</Link>
                     </div>
                 </div>
             </section>
